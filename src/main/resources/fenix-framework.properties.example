@@ -1,0 +1,5 @@
+dbAlias=//localhost:3306/bank
+dbUsername=root
+dbPassword=password
+updateRepositoryStructureIfNeeded=true
+canCreateDomainMetaObjects=false
