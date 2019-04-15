@@ -14,3 +14,26 @@ relation DomainRootHasBankApplication {
 	}
 }
 
+class Account {
+    String id;
+    int balance;
+}
+
+class SavingsAccount {
+    String id;
+    int balance;
+}
+
+class WithdrawalAccount {
+    String id;
+    int balance;
+}
+
+relation BankHasAccount {
+    Bank playsRole bank{
+        multiplicity 1..1;
+    }
+    Account playsRole account {
+        multiplicity 0..*;
+    }
+}
